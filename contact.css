@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    --font-sans: "Bahnschrift", arial, helvetica, sans-serif;
+    --font-serif: Georgia, 'Times New Roman', Times, serif;
+    --clr-primary: #ffb95f;
+    --clr-white: #fff;
+    --clr-black: #000;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+}
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-primary);
+    padding: 1.6em 6em;
+}
+
+#topBar .logo {
+    font-size: 1.2em;
+    letter-spacing: .15em;
+}
+
+#topBar a:where(:link, :visited) {
+    color: var(--clr-black);
+    text-decoration: none;
+    transition: all .5s;
+    display: inline-block;
+}
+
+#topBar nav a {
+    margin-inline: 1em;
+}
+
+.content {
+    padding-inline: 4em;
+}
+
+.content h1 {
+    padding: 1em 0;
+    font-size: 3em;
+    font-family: var(--font-serif);
+}
